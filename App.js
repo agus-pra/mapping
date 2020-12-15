@@ -8,9 +8,9 @@ const mapboxAccessToken =
 MapboxGL.setAccessToken(mapboxAccessToken);
 
 const App = () => {
-  const [cCor, setCor] = useState([109.32199, -0.03109]);
+  const [cCor, setCor] = useState([98.66667,3.58333]);
   const [zoom, setZoom] = useState(4);
-  const [selectedValue, setSelectedValue] = useState('sumatera utara');
+  const [selectedValue, setSelectedValue] = useState('Sumut');
 
   const Aceh = [95.323753,5.548290];
   const Sumut = [98.66667,3.58333];
@@ -19,27 +19,9 @@ const App = () => {
   const Riau = [101.45,0.53333];
   const Lampung = [105.25803,-5.42544];
   const Bengkulu = [102.26554,-3.80044];
-  const Kaltim = [116.82887,-1.26753];
-  const Kalsel = [114.59075,-3.31987];
-  const Kalbar = [109.32199,-0.03109];
-  const Jambi = [103.61667,-1.6];
-  const Jakarta = [106.84513,-6.21462];
-  const DKI = [110.36083,-7.78278];
-  const Jabar = [107.61861,-6.90389];
-  const Jatim = [112.75083,-7.24917];
-  const Jateng = [110.4203,-6.9932];
-  const Banten = [106.71789,-6.28862];
-  const Sulsel = [119.4221,-5.14];
-  const Sulut = [124.84892,1.48218];
-  const Sulteng = [119.8707,-0.8917];
-  const Maluku = [128.18141,-3.69543];
-  const Bali = [115.21667,-8.65];
-  const NTT = [123.6075,-10.1718];
-  const NTB = [116.11667,-8.58333];
 
   const startDestinationPoints = [Aceh, Sumut, Sumbar, Sumsel, Riau, Lampung, 
-    Bengkulu, Kaltim, Kalsel, Kalbar, Jambi, Jakarta, DKI, Jabar, Jatim, Jateng,
-    Banten, Sulsel, Sulut, Sulteng, Maluku, Bali, NTT, NTB];
+    Bengkulu];
 
   const testClick = (val) => {
     const data = val.split(',').map(x=>+x);
